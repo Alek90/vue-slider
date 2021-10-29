@@ -2,6 +2,8 @@ const root = new Vue({
     el: "#root",
     data: {
 
+        counter: 5,
+
         countries: [
             {
                 image:"img/01.jpg",
@@ -30,4 +32,6 @@ const root = new Vue({
             }
         ]
     }
+
+    
 })
