@@ -3,29 +3,29 @@ const root = new Vue({
     data: {
         countries: [
             {
-                image:"",
-                name:"",
-                caption:""
+                image:"img/01.jpg",
+                name:"Svezia",
+                caption:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis."
             },
             {
-                image:"",
-                name:"",
-                caption:""
+                image:"img/02.jpg",
+                name:"Svizzera",
+                caption:"Lorem ipsum."
             },
             {
-                image:"",
-                name:"",
-                caption:""
+                image:"img/03.jpg",
+                name:"Gran Bretagna",
+                caption:"Lorem ipsum, dolor sit amet consectetur adipisicing elit."
             },
             {
-                image:"",
-                name:"",
-                caption:""
+                image:"img/04.jpg",
+                name:"Germania",
+                caption:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam."
             },
             {
-                image:"",
-                name:"",
-                caption:""
+                image:"img/05.jpg",
+                name:"Paradise",
+                caption:"Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam."
             }
         ]
     }
