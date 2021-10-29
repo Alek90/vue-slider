@@ -16,11 +16,13 @@
         <div class="container">
 
             <!-- qui la sezione principale con l'immagine selezionata, il nome del paese ed una didascalia. -->
-            <section class="master">
+            <section v-for="country in countries" class="master">
 
-                <img src="" alt="">
-                <h2></h2>
-                <p></p>
+                <img :src="country.image" alt="">
+                <div class="text">
+                    <h2>{{country.name}}</h2>
+                    <p>{{country.caption}}</p>
+                </div>
 
             </section>
 

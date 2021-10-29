@@ -1,6 +1,7 @@
 const root = new Vue({
     el: "#root",
     data: {
+
         countries: [
             {
                 image:"img/01.jpg",
