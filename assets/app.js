@@ -31,6 +31,15 @@ const root = new Vue({
                 caption:"Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam."
             }
         ]
+    },
+
+    methods: {
+        nextImg(){
+            console.log("next");
+            if(this.counter < 5){
+                this.counter ++;
+            }
+        }
     }
 
 
