@@ -24,10 +24,14 @@ section img{
     width: 700px;
     height: 300px;
     object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .text{
     text-align: right;
+    color: whitesmoke;
     position: absolute;
     right: 15px;
     bottom: 20px;
@@ -46,10 +50,11 @@ section img{
 
 .preview img{
     width: 100%;
-    height: calc(100% / 5);
+    height: 20%;
     background-color: darkblue;
     opacity: 50%;
     object-fit: cover;
+    display: block;
 }
 
 button{

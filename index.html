@@ -16,15 +16,19 @@
         <div class="container">
 
             <!-- qui la sezione principale con l'immagine selezionata, il nome del paese ed una didascalia. -->
-            <section v-for="country in countries" class="master">
+            <div class="master">
 
-                <img :src="country.image" alt="">
-                <div class="text">
-                    <h2>{{country.name}}</h2>
-                    <p>{{country.caption}}</p>
-                </div>
+                <section v-for="country in countries">
 
-            </section>
+                    <img :src="country.image" alt="">
+                    <div class="text">
+                        <h2>{{country.name}}</h2>
+                        <p>{{country.caption}}</p>
+                    </div>
+
+                </section>
+
+            </div>
 
             
             
@@ -32,12 +36,8 @@
                 
                 <!-- qui la scaletta di img in anteprima. -->
                 <div  class="preview">
-
-                    <div v-for="country in countries" >
                         
-                        <img :src="country.image" alt="">
-
-                    </div>
+                    <img v-for="country in countries" :src="country.image" alt="">
                     
                 </div>
                 
