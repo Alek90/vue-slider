@@ -34,13 +34,22 @@ const root = new Vue({
     },
 
     methods: {
+
         nextImg(){
             console.log("next");
-            if(this.counter < 5){
+            if(this.counter <= 4){
                 this.counter ++;
             }if(this.counter == 5){
                 this.counter = 0;
             }console.log(this.counter);
+        },
+        
+        formerImg(){
+            if(this.counter <= 4){
+                this.counter --;
+            }if(this.counter == -1){
+                this.counter = 4
+            }
         }
     }
 
