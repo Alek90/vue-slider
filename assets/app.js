@@ -38,7 +38,9 @@ const root = new Vue({
             console.log("next");
             if(this.counter < 5){
                 this.counter ++;
-            }
+            }if(this.counter == 5){
+                this.counter = 0;
+            }console.log(this.counter);
         }
     }
 
