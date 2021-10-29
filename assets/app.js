@@ -2,7 +2,7 @@ const root = new Vue({
     el: "#root",
     data: {
 
-        counter: 5,
+        counter: 0,
 
         countries: [
             {
@@ -33,5 +33,5 @@ const root = new Vue({
         ]
     }
 
-    
+
 })

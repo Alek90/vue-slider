@@ -20,10 +20,10 @@
 
                 <section v-for="country in countries">
 
-                    <img :src="country.image" alt="">
+                    <img :src="countries[counter].image" alt="">
                     <div class="text">
-                        <h2>{{country.name}}</h2>
-                        <p>{{country.caption}}</p>
+                        <h2>{{countries[counter].name}}</h2>
+                        <p>{{countries[counter].caption}}</p>
                     </div>
 
                 </section>
