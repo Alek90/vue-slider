@@ -4,6 +4,10 @@ const root = new Vue({
 
         counter: 0,
 
+        activeClass: "selected",
+
+        inactiveClass: "unselected",
+
         countries: [
             {
                 image:"img/01.jpg",
@@ -43,13 +47,23 @@ const root = new Vue({
                 this.counter = 0;
             }console.log(this.counter);
         },
-        
+
         formerImg(){
             if(this.counter <= 4){
                 this.counter --;
             }if(this.counter == -1){
                 this.counter = 4
             }
+        },
+
+        selectImg(){
+            
+           if(this.counter = country){
+               console.log("ok");
+               return selected;
+           }else{
+               return unselected;
+           }
         }
     }
 

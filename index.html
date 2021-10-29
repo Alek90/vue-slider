@@ -18,10 +18,9 @@
             <!-- qui la sezione principale con l'immagine selezionata, il nome del paese ed una didascalia. -->
             <div class="master">
 
-                <section v-for="country in countries">
+                <section>
 
-                    <!-- se cambio il valore di counter, cambio indice a countries...-Come cambio valore a counter?-Che succede se a section applico un ciclo in counter (impostando il valore di counter a 5) assieme al ciclo presente?-No, se li stampo tutti sono punto e da capo!-Ma se applico una funzione a counter, che ne cambia il valore al click, allo stesso click che mi evidenzia l'img in anteprima, allora countries[counter] equivarrebbe ad identificare l'oggetto specifico country che voglio qui...ma si può fare anche con index, o mi serve un counter? -->
-                    <img :src="countries[counter].image" alt="">
+                    <img :src="countries[counter].image" alt="countries[counter].name">
                     <div class="text">
                         <h2>{{countries[counter].name}}</h2>
                         <p>{{countries[counter].caption}}</p>
@@ -38,7 +37,7 @@
                 <!-- qui la scaletta di img in anteprima. -->
                 <div  class="preview">
                         
-                    <img v-for="country in countries" :src="country.image" alt="">
+                    <img v-for="(country, index) in countries" v-if="":src="country.image" alt="">
                     
                 </div>
                 
@@ -55,11 +54,6 @@
             </div>
             
         </div>
-
-        <div v-for="numb in counter" class="counter">
-            <p>{{numb}}</p>
-        </div>
-        
 
     </div>
 

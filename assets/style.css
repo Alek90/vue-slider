@@ -5,7 +5,11 @@
 }
 
 body{
-    
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container{
@@ -17,16 +21,21 @@ body{
 .master {
     width: 700px;
     height: 300px;
+    /* position: relative; */
+}
+
+section{
+    width: 100%;
+    height: 100%;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section img{
     width: 700px;
     height: 300px;
     object-fit: cover;
-    position: absolute;
-    left: 0;
-    top: 0;
 }
 
 .text{
@@ -52,7 +61,6 @@ section img{
     width: 100%;
     height: 20%;
     background-color: darkblue;
-    opacity: 50%;
     object-fit: cover;
     display: block;
 }
@@ -85,3 +93,11 @@ i{
     transform: translate(-50%);
 }
 
+.unselected{
+    opacity: 50%;
+}
+
+.selected{
+    opacity: 100%;
+    border: 2px solid white;
+}
