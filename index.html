@@ -24,33 +24,35 @@
 
             </section>
 
-        </div>
+            
+            
+            <div class="menu">
+                
+                <!-- qui la scaletta di img in anteprima. -->
+                <div  class="preview">
 
+                    <div v-for="country in countries" >
+                        
+                        <img :src="country.image" alt="">
 
-        <div class="menu">
-
-            <!-- qui la scaletta di img in anteprima. -->
-            <div v-for="country in countries" class="preview">
-
-                <img :src="country.image" alt="">
-
+                    </div>
+                    
+                </div>
+                
+                
+                <!-- i bottoni che ci permetteranno di scorrere tra le img -->
+                <button class="up">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+                
+                <button class="down">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                
             </div>
-
-
-            <!-- i bottoni che ci permetteranno di scorrere tra le img -->
-            <button class="up">
-                <i class="fas fa-chevron-up"></i>
-            </button>
-            
-            <button class="down">
-                <i class="fas fa-chevron-down"></i>
-            </button>
             
         </div>
-
-
-
-
+        
 
     </div>
 
