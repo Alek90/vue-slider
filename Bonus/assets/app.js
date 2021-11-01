@@ -40,7 +40,7 @@ const root = new Vue({
 
     methods: {
 
-        playNext(){
+        /* playNext(){
             setInterval(() => {
                 if(this.counter <= 4){
                     this.counter ++;
@@ -48,9 +48,9 @@ const root = new Vue({
                     this.counter = 0;
                 };
             }, 3000)
-        },
+        }, */
 
-       /*  playFormer(){
+        playFormer(){
             setInterval(() => {
                 if(this.counter <= 4){
                     this.counter --;
@@ -58,7 +58,7 @@ const root = new Vue({
                     this.counter = 4
                 };
             }, 3000)
-        } */
+        }
     }
 
 
