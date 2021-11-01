@@ -54,17 +54,8 @@ const root = new Vue({
             }if(this.counter == -1){
                 this.counter = 4
             }
-        },
-
-        selectImg(){
-            
-           if(this.counter = country){
-               console.log("ok");
-               return selected;
-           }else{
-               return unselected;
-           }
         }
+
     }
 
 
