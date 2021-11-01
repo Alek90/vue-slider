@@ -49,7 +49,6 @@ section img{
 .menu{
     width: 135px;
     height: 300px;
-    position: relative;
 }
 
 .preview{
@@ -79,18 +78,11 @@ i{
     vertical-align: middle;
 }
 
-.up{
-    position: absolute;
-    top: 5px;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.down{
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translate(-50%);
+.auto_play{
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .unselected{
