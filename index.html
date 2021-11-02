@@ -37,10 +37,11 @@
                 <!-- qui la scaletta di img in anteprima. -->
                 <div  class="preview">
 
-                    <img v-for="(country, index) in countries" :src="country.image" alt=""  v-if="index != counter ? true : false" :class="inactiveClass">
+                    <div class="img_frame" v-for="(country, index) in countries">
 
-                    <img :src="countries[counter].image" alt=""  if-else :class="activeClass">   
+                        <img :class="index === counter ? 'selected' : 'unselected'" :src="country.image" alt="index">
 
+                    </div>
 
                 </div>
                 
