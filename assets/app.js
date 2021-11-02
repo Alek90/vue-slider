@@ -57,6 +57,17 @@ const root = new Vue({
             }
         },
 
+    },
+
+    mounted() {
+        console.log("halo");
+        setInterval(() => {
+            if(this.counter <= 4){
+                this.counter ++;
+            }if(this.counter == 5){
+                this.counter = 0;
+            };
+        }, 3000)
     }
 
 
